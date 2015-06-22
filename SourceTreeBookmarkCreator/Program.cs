@@ -17,9 +17,9 @@ namespace SourceTreeBookmarkCreator
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            WriteLine("Please make sure SourceTree and press any key....");
+            WriteLine("Please make sure SourceTree is closed and press any key:");
             ReadKey();
-            WriteLine("Working, this might take a minute...");
+            WriteLine("Processing...");
 
             var nodes = new List<TreeViewNode>();
             var outputPath = Path.Combine(Environment.GetEnvironmentVariable("LocalAppData"), @"Atlassian\SourceTree", "bookmarks.xml");
